@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/t_id"
+        android:text="Trasfomer id : 123456"
+        android:textSize="30dp"
+        android:textColor="#111111"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+<TextView
+    android:layout_marginTop="5dp"
+    android:layout_below="@+id/t_id"
+
+    android:id="@+id/company_name"
+    android:text="company name: Siemens"
+    android:textSize="30dp"
+    android:textColor="#111111"
+    android:gravity="center"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/company_name"
+        android:id="@+id/capacity"
+        android:text="capacity: 50 V"
+        android:textSize="30dp"
+        android:textColor="#111111"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+<TextView
+    android:layout_marginTop="5dp"
+    android:layout_below="@+id/capacity"
+    android:layout_width="fill_parent"
+    android:background="#000000"
+    android:layout_height="2dp" />
+</RelativeLayout>
+</RelativeLayout>

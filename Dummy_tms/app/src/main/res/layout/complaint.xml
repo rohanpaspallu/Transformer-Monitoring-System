@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+
+        android:background="#3F51B5">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Complaint"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"/>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/trans_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textSize="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Transformer Type:"
+        android:textColor="#000000"/>
+
+
+
+    <Spinner
+        android:id="@+id/trans"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignStart="@+id/trans_type"
+        android:layout_below="@+id/rg"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Spinner
+        android:id="@+id/capacity"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignStart="@+id/t_capacity"
+        android:layout_below="@+id/rg"
+        />
+
+    <EditText
+        android:id="@+id/complaint_description"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:ems="10"
+        android:hint="complaint description"
+        android:inputType="textMultiLine" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/relativeLayout10"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/trans"
+        android:layout_below="@+id/relativeLayout10"
+        android:layout_marginBottom="133dp"
+        android:text="submit" />
+
+</LinearLayout>

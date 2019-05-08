@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/electricity">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+
+        android:background="#3F51B5">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="logout"
+            android:id="@+id/logout"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/relative"
+        android:id="@+id/relativee"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_slider"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" />
+        <LinearLayout
+            android:id="@+id/ll_dots"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"></LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@+id/relativee">
+
+
+    <LinearLayout
+        android:layout_below="@+id/relative"
+        android:layout_width="fill_parent"
+        android:weightSum="3"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:orientation="horizontal"
+         android:weightSum="2">
+         <Button
+             style="@style/tmsStyle"
+             android:id="@+id/complaint"
+             android:layout_weight="1"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:drawableTop="@drawable/complaint"
+             android:text="Add Complaint"
+             android:layout_marginLeft="5dp"
+             android:layout_marginTop="5dp"
+             android:layout_marginRight="5dp"
+             />
+
+         <Button
+             style="@style/tmsStyle"
+             android:id="@+id/notifications"
+             android:layout_weight="1"
+             android:drawableTop="@drawable/notification"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:text="notification"
+             android:layout_marginTop="5dp"
+             android:layout_marginRight="5dp"/>
+
+
+     </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+                style="@style/tmsStyle"
+                android:id="@+id/transformers"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/transformer"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="transformer"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"/>
+            <Button
+                style="@style/tmsStyle"
+                android:id="@+id/about_us"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/aboutus"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="About us"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"/>
+
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:layout_marginBottom="5dp">
+
+        <Button
+            style="@style/tmsStyle"
+            android:id="@+id/contact_us"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:drawableTop="@drawable/contactus"
+            android:text="contact us"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"/>
+        <Button
+            style="@style/tmsStyle"
+            android:id="@+id/history"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:drawableTop="@drawable/history"
+            android:layout_height="fill_parent"
+            android:text="history"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>
